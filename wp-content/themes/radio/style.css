@@ -1,0 +1,1170 @@
+/*
+Theme Name: ConciertoGRC
+Description: Tema para radio, realizado en HTML5
+Author: b3
+Author URI: http://gradiomex.com
+Version: 1.0.0
+*/
+/* ========================================================================== 
+   BANNERS
+   ========================================================================== */
+
+	#banner_bgizquierdo {
+		left: 50%;
+		width: 200px;
+		height: 1264px;
+		position: fixed !important;
+		right: 0px;
+		top: 0px;
+		display: block;
+		z-index: 1000;
+		margin-left: -680px;
+	}
+  
+	#banner_bgderecho {
+		left: 50%;
+		width: 200px;
+		height: 1264px;
+		position: fixed !important;
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		display: block;
+		z-index: 1000;
+		margin-left: 485px;
+	}	 
+	
+	#banner_footer{
+		width: 100%;
+		margin: 5px;
+	}
+	
+      
+@media screen and (max-width:820px){   
+
+		#banner_bgizquierdo {
+		display: none;
+		}
+  
+		#banner_bgderecho {
+		display: none;
+		}   
+		
+	}  
+
+
+/* ========================================================================== 
+   CONFIG 
+   ========================================================================== */
+
+/** config body */   
+   
+	body {
+		background:#000;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0;
+		background-repeat: repeat-y;
+		background-attachment: fixed;
+		background-position: top center;
+		font-family: 'Raleway', sans-serif; /* 1 */
+		-ms-text-size-adjust: 100%; /* 2 */
+		-webkit-text-size-adjust: 100%; /* 2 */
+		}   
+	
+		.fixed {
+		position:fixed; 
+		top:0; 
+		left:0;
+		}
+		
+		.centrado {
+		margin-left: 0 auto;
+		padding: 0em 0em;
+		text-align: center;
+		}
+
+/** text */   
+
+		.blanco {
+		color: #fff;
+		}
+		
+		.pathway {
+		font-family: 'Pathway Gothic One', sans-serif;
+		}
+
+		.contenidos_title {
+		display: inline;
+		font-family: 'Raleway';
+		font-weight: 800; 
+		font-size: 1.3em;
+		padding: 0.5em 0.5em;
+		}
+
+		.blogs_title{
+		display: block;
+		font-family: 'Raleway';
+		font-weight: 500; 
+		}
+		
+		.publicidad_txt{
+		display:block;
+		margin-bottom: 0.6em;
+		font-size: 0.6em;
+		position: relative;
+		}
+
+		.noticia{
+		display:inline-block;
+		margin-bottom: 1em;
+		position: relative;
+		}	
+		
+		.ver_mas{
+		display: block;
+		font-family: 'Raleway';
+		font-weight: 300; 
+		font-size: 1em;
+		}
+
+		.espaciado{
+		padding-top: 0.1em;
+		padding-bottom: 0.1em;
+		display: inline;
+		}
+
+		.facebook_logo{
+		color: #405D9B;
+		}
+
+		.twitter_logo{
+		color: #55ACEE;
+		}
+
+		.instagram_logo{
+		color: #1D597E;
+		}
+
+/** imagenes */ 
+
+	img, embed, object, video {
+	  max-width: 100%;
+	  height: auto;
+	}
+	
+	.block { 
+	width: 100%;
+	height: 100%;
+	}
+	
+	.sombreado { 
+	-webkit-box-shadow: 4px 6px 20px -2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 6px 20px -2px rgba(0,0,0,0.75);
+	box-shadow: 4px 6px 20px -2px rgba(0,0,0,0.75);
+	}
+
+/** listas */  
+
+	li.medium {
+	display:none;
+	}
+
+	.clear {
+		clear:both;
+	}
+
+/** iframe */
+
+	.embed-container { 
+	position: relative;
+	padding-bottom: -1%; 
+	overflow: hidden; 
+	height: 100%;
+	max-width: 100%; 
+	max-height: 100%;
+	}
+
+/** facebook widget */
+
+	.fb_iframe_widget {
+	 display: block !important;
+	}
+	 
+	.fb-like-box iframe {
+	 width: 100% !important;
+	}
+	 
+	.fb-like-box span {
+	 width: auto !important;
+	 position: initial !important;
+	}
+	.fb_iframe_widget_fluid span {
+	 width:100% !important;
+	}
+	.fb_iframe_widget span {
+	 position: static !important;
+	}
+
+/* ========================================================================== 
+   CONFIG NAV BAR
+   ========================================================================== */
+	
+	.navbar-default {
+		margin: 0px;
+		font-family: 'Pathway Gothic One', sans-serif;
+		text-transform: uppercase;
+		background-color: #005D8E;
+		border-color: #3675ba;
+		font-size: 17px;
+		border-radius: 0px 0px 0px 0px;
+		-moz-border-radius: 0px 0px 0px 0px;
+		-webkit-border-radius: 0px 0px 0px 0px;
+		border: 0px solid #000000;
+		-webkit-box-shadow: inset 3px -12px 45px -2px rgba(0,0,0,0.75);
+		-moz-box-shadow: inset 3px -12px 45px -2px rgba(0,0,0,0.75);
+		box-shadow: inset 3px -12px 45px -2px rgba(0,0,0,0.75);
+	}
+	.navbar-default .navbar-brand {
+		color: #afc0c5;
+	}
+	.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+		color: #ffffff;
+	}
+	.navbar-default .navbar-text {
+		color: #afc0c5;
+	}
+	.navbar-default .navbar-nav > li > a {
+		color: #FFF;
+	}
+	.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+		color: #ffffff;
+	}
+	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+		color: #ffffff;
+		background-color: #000;
+	}
+	.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+		color: #ffffff;
+		background-color: #3675ba;
+	}
+	.navbar-default .navbar-toggle {
+		border-color: #3675ba;
+	}
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+		background-color: #3675ba;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+		background-color: #afc0c5;
+	}
+	.navbar-default .navbar-collapse,
+	.navbar-default .navbar-form {
+		border-color: #afc0c5;
+	}
+	.navbar-default .navbar-link {
+		color: #afc0c5;
+	}
+	.navbar-default .navbar-link:hover {
+		color: #ffffff;
+	}
+
+	@media (max-width: 767px) {
+		
+		.navbar-default {
+		font-family: 'Pathway Gothic One', sans-serif;
+		text-transform: uppercase;
+		border-color: #FFF;
+		font-size: 15px;
+		background: #000;
+		}
+	
+		.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+			color: #000000;
+		}
+		.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+			color: #ffffff;
+		}
+		.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+			color: #ffffff;
+			background-color: #000000;
+		}
+		
+		.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+		color: #ffffff;
+		background-color: #000;
+		}
+		.navbar-default .navbar-toggle {
+			border-color: #000;
+		}
+		.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+			background-color: #000;
+		}
+	}
+	
+/* ========================================================================== 
+   LISTADO DE JSON
+   ========================================================================== */
+
+.widget-container {
+    max-width: 300px;
+    display: block;
+    overflow: hidden;
+}
+
+.widget-container ul.widget-content {
+    list-style-type: none;
+    margin-left: -3em;
+}
+
+.widget-container ul.widget-content li {
+    border-bottom: dotted #ccc 1px;
+    overflow: hidden;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.widget-container ul.widget-content li a .widget-img {
+    height: 80px;
+    margin-right: .5em;
+    float: left;
+}
+
+
+.widget-container ul.widget-content li a .widget-text p {
+    margin: 0;
+    padding: 0;
+    font-size: .9em;
+}
+
+.widget-container ul.widget-content li a .widget-text .widget-text-fecha {
+    font-size: .8em;
+    color: #a0a0a0;
+    font-weight: normal;
+    text-decoration:none;
+}
+
+.row-vermas {
+    margin-top: 1em;
+    display: block;
+    text-align: right;
+    
+    color:#fff;
+}
+
+.vermas {
+    background: #428bca;
+    padding: .5em .5em .5em .5em;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: .5em;
+}
+
+.vermas a {
+    color: #fff;
+    font-size: 0.95em;
+    text-transform:none;
+}
+
+
+/* ========================================================================== 
+   VERSION DESKTOP
+   ========================================================================== */
+	#contenedor {
+	max-width: 960px;
+	border: 0px solid #000000;
+	margin: 0 auto;
+	background: #F0F1F3;
+	}
+/* HEADER
+   ========================================================================== */
+	#cabecera_principal {
+	overflow: hidden;
+	width: 100%;
+	background: #000000;
+	}
+		#logo_menu {
+		display: none;
+		}
+	
+		#logo_desktop {
+		float: left; 
+		margin-top: 20px; 
+		padding-left: 2%;
+		margin-bottom: 20px;
+		}
+		#leaderboard {
+		float: right;
+		margin-top: 0px; 
+		margin-bottom: 0px;
+		margin-right: 15px;
+		}
+		
+		#listenlikebox {
+		margin-top: 15px;
+		border-radius: 20px 20px 20px 20px;
+		-moz-border-radius: 20px 20px 20px 20px;
+		-webkit-border-radius: 20px 20px 20px 20px;
+		border: 0px solid #000000;
+		background: #ccc;
+		-webkit-box-shadow: inset 1px 1px 31px 3px rgba(0,0,0,0.75);
+		-moz-box-shadow: inset 1px 1px 31px 3px rgba(0,0,0,0.75);
+		box-shadow: inset 1px 1px 31px 3px rgba(0,0,0,0.75);
+		}
+/* MENU PRINCIPAL
+   ========================================================================== */
+	#menu_principal {
+	width: 100%;
+	}
+/* PORTADA
+   ========================================================================== */
+   
+	#portada {
+	overflow: hidden;
+	width: 100%;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	}
+		#rotativo {
+		float:left;
+		width: 66.6%;
+		padding-left: 1%;
+		padding-right: 1%;
+		}
+		#rot_banner {
+		float:left;
+		width: 33.4%;
+		padding-left: 1%;
+		padding-right: 1%;
+		}
+
+/* CONTENIDOS
+   ========================================================================== */
+	#contenidos {
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	background: rgba(226,226,226,1);
+	background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(255,255,255,1) 32%, rgba(255,252,255,1) 51%, rgba(255,255,255,1) 75%, rgba(224,221,224,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(32%, rgba(255,255,255,1)), color-stop(51%, rgba(255,252,255,1)), color-stop(75%, rgba(255,255,255,1)), color-stop(100%, rgba(224,221,224,1)));
+	background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(255,255,255,1) 32%, rgba(255,252,255,1) 51%, rgba(255,255,255,1) 75%, rgba(224,221,224,1) 100%);
+	background: -o-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(255,255,255,1) 32%, rgba(255,252,255,1) 51%, rgba(255,255,255,1) 75%, rgba(224,221,224,1) 100%);
+	background: -ms-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(255,255,255,1) 32%, rgba(255,252,255,1) 51%, rgba(255,255,255,1) 75%, rgba(224,221,224,1) 100%);
+	background: linear-gradient(to bottom, rgba(226,226,226,1) 0%, rgba(255,255,255,1) 32%, rgba(255,252,255,1) 51%, rgba(255,255,255,1) 75%, rgba(224,221,224,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#e0dde0', GradientType=0 );
+	}
+
+		#concierto {
+		overflow: hidden;
+		float:left;
+		width: 100%;
+		height: auto;
+		padding: 1.5%; 
+		}
+		#eventoss {
+		overflow: hidden;
+		float:left;
+		width: 33.3%;
+		height: 480px;
+		padding: 1.5%; 
+		}
+		#tunegenie {
+		overflow: hidden;
+		float:left;
+		width: 99%;
+		padding: 1.1%; 
+		}
+		#facebook {
+		overflow: hidden;
+		float:left;
+		width: 33.3%;
+		height: 480px;
+		padding: 1.1%; 
+		}
+		#tunegenie2 {
+		overflow: hidden;
+		float:left;
+		width: 33.3%;
+		height: 480px;
+		padding: 1.5%; 
+		}
+		#news_widget {
+		overflow: hidden;
+		float:left;
+		width: 33.4%;
+		height: 700px;
+		padding: 1.5%; 
+		}
+		#blogs {
+		overflow: hidden;
+		float:left;
+		width: 33.3%;
+		height: auto;
+		padding: 1.5%;
+		}
+		#single {
+		float:left;
+		width: 66.7%;
+		height: auto;
+		padding: 1.5%;
+		}
+		#news_single {
+		overflow: hidden;
+		float:left;
+		width: 33.3%;
+		height: auto;
+		padding: 1.5%; 
+		}
+		#video_social {
+		overflow: hidden;
+		width: 100%;
+		height: auto;
+		}
+		#encuestas {
+		overflow: hidden;
+		float:left;
+		width: 33.3%;
+		height: auto;
+		padding: 1.5%;
+		}
+		#video {
+		overflow: hidden;
+		float:left;
+		width: 33.3%;
+		height: auto;
+		padding: 1.5%;
+		}
+		#banner_home_boxg {
+		display: none;
+		}
+		#social {
+		overflow: hidden;
+		float:left;
+		width: 33.3%;
+		padding: 1.5%;
+		}
+/* FOOTER
+   ========================================================================== */
+	#inferior {
+	overflow: hidden;
+	width: 100%;
+	background-color: #dbd7db;
+	}  
+	
+	#foot_info {
+	width: 100%;
+	}
+	
+	#foot_cabina {
+	float: left;
+	width: 25%;
+	padding-left: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	}
+	
+	#foot_redes {
+	float: left;
+	width: 25%;
+	padding: 20px;
+	}
+	
+	#foot_secciones {
+	float: left;
+	width: 30%;
+	padding-top: 20px;
+	}
+	
+	#foot_copyright {
+	float: left;
+	width: 20%;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	}  
+/* ========================================================================== 
+   VERSION TABLET MAX WIDTH 920PX -------------------------------------------
+   ========================================================================== */
+@media screen and (max-width:920px){ 
+	#contenedor {
+	max-width: 100%;
+	margin: 0 auto;
+	background-color: #F0F1F3;
+	}
+/* HEADER
+   ========================================================================== */
+	#cabecera_principal {
+	overflow: hidden;
+	width: 100%;
+	background-color: #F0F1F3;
+	}
+		#logo_menu {
+		display: inline;
+		}
+		
+		#logo_desktop {
+		display: none;
+		}
+		
+		#leaderboard {
+		float:none;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0px; 
+		margin-bottom: 2px;
+		}
+		
+		#listenlikebox {
+		display: none;
+		}
+/* MENU PRINCIPAL
+   ========================================================================== */
+	#menu_principal {
+	background-color: #000;
+	}
+/* PORTADA
+   ========================================================================== */
+   
+	#portada {
+	overflow: hidden;
+	width: 100%;
+	background-color: #F0F1F3;
+	}
+		#rotativo {
+		float:left;
+		width: 100%;
+		background-color: #F0F1F3;
+		margin-left: 0 auto;
+		padding: 0em 0em;
+		text-align: center;	
+		}
+		#rot_banner {
+		display: none;
+		}
+/* CONTENIDOS
+   ========================================================================== */
+	#contenidos {
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	background-color: #F0F1F3;
+	}
+		#concierto {
+		overflow: hidden;
+		float:left;
+		width: 100%;
+		height: auto;
+		padding: 1.5%; 
+		background-color: #F0F1F3;
+		}
+		#eventoss {
+		overflow: hidden;
+		float:left;
+		width: 100%;
+		height: 480px;
+		padding: 1.5%; 
+		background-color: #F0F1F3;
+		}	
+		#tunegenie {
+		overflow: hidden;
+		float:left;
+		width: 100%;
+		padding: 1.5%; 
+		background-color: #F0F1F3;
+		}
+		#facebook {
+		overflow: hidden;
+		float:left;
+		width: 100%;
+		height: 480px;
+		padding: 1.5%; 
+		background-color: #F0F1F3;
+		}
+		#tunegenie2 {
+		overflow: hidden;
+		float:left;
+		width: 100%;
+		height: 480px;
+		margin-left: 0 auto;
+		padding: 0em 0em;
+		background-color: #F0F1F3;
+		}	
+		#news_widget {
+		overflow: hidden;
+		float:right;
+		width: 100%;
+		height: auto;
+		padding: 1.5%; 
+		background-color: #F0F1F3;
+		}
+		#blogs {
+		overflow: hidden;
+		float:left;
+		width: 100%;
+		height: auto;
+		padding: 1.5%;
+		background-color: #F0F1F3;
+		}
+		#single {
+		float:left;
+		width: 66.7%;
+		height: auto;
+		padding: 1.5%;
+		background-color: #F0F1F3;
+		}
+		#news_single {
+		overflow: hidden;
+		float:left;
+		width: 33.3%;
+		height: auto;
+		padding: 1.5%; 
+		background-color: #F0F1F3;
+		}
+		#video_social {
+		overflow: hidden;
+		width: 100%;
+		height: auto;
+		background-color: #F0F1F3;
+		}
+		#encuestas {
+		overflow: hidden;
+		float:left;
+		width: 100%;
+		height: auto;
+		padding: 1.5%;
+		background-color: #F0F1F3;
+		}
+		#video {
+		overflow: hidden;
+		float:left;
+		width: 100%;
+		height: auto;
+		padding: 1.5%;
+		background-color: #F0F1F3;
+		}
+		#banner_home_boxg {
+		display: block;
+		overflow: hidden;
+		float:left;
+		width: 100%;
+		height: auto;
+		margin-left: 0 auto;
+		padding: 0em 0em;
+		text-align: center;	
+		background-color: #F0F1F3;
+		}
+		#social {
+		overflow: hidden;
+		float:left;
+		width: 100%;
+		height: auto;
+		padding: 1.5%;
+		background-color: #F0F1F3;
+		}
+/* FOOTER
+   ========================================================================== */
+#inferior {
+	overflow: hidden;
+	width: 100%;
+	background-color: #dbd7db;
+	}  
+	
+	#foot_info {
+	width: 100%;
+	}
+	
+	#foot_cabina {
+	float: left;
+	width: 50%;
+	padding-left: 20px;
+	padding-top: 10px;
+	}
+	
+	#foot_redes {
+	float: left;
+	width: 50%;
+	padding: 10px;
+	}
+	
+	#foot_secciones {
+	float: left;
+	width: 55%;
+	padding-left: 10px;
+	}
+	
+	#foot_copyright {
+	float: left;
+	width: 45%;
+	}
+}
+/* ========================================================================== 
+   VERSION MOVIL MAX WIDTH 580PX --------------------------------------------
+   ========================================================================== */
+@media screen and (max-width:580px){
+	#contenedor {
+	max-width: 100%;
+	margin: 0 auto;
+	background-color: #F0F1F3;
+	}
+/* HEADER
+   ========================================================================== */
+	#cabecera_principal {
+	overflow: hidden;
+	width: 100%;
+	background-color: #F0F1F3;
+	}
+		#logo_menu {
+		display: inline;
+		}
+		
+		#logo_desktop {
+		display: none;
+		}
+		
+		#leaderboard {
+		float:none;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0px; 
+		margin-bottom: 2px;
+		}
+		
+		#listenlikebox {
+		display: none;
+		}
+/* MENU PRINCIPAL
+   ========================================================================== */
+	#menu_principal {
+	width: 100%;
+	background-color: #000;
+	}
+/* PORTADA
+   ========================================================================== */
+   
+	#portada {
+	overflow: hidden;
+	width: 100%;
+	background-color: #F0F1F3;
+	}
+		#rotativo {
+		float:left;
+		width: 100%;
+		background-color: #F0F1F3;
+		margin-left: 0 auto;
+		padding: 0em 0em;
+		text-align: center;				
+		}
+		#rot_banner {
+		display: none;
+		}
+
+	
+/* CONTENIDOS
+   ========================================================================== */
+	#contenidos {
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	background-color: #F0F1F3;
+	}
+		#concierto {
+		overflow: hidden;
+		float:left;
+		width: 100%;
+		height: auto;
+		padding: 5%; 
+		background-color: #F0F1F3;
+		}
+		#eventoss {
+		overflow: hidden;
+		float:left;
+		width: 100%;
+		height: 480px;
+		padding: 5%; 
+		background-color: #F0F1F3;
+		}
+		#tunegenie {
+		overflow: hidden;
+		float:left;
+		width: 100%;
+		padding: 5%; 
+		background-color: #F0F1F3;
+		}
+		#facebook {
+		overflow: hidden;
+		float:left;
+		width: 100%;
+		height: 480px;
+		padding: 5%; 
+		background-color: #F0F1F3;
+		}	
+		#tunegenie2 {
+		overflow: hidden;
+		float:left;
+		width: 100%;
+		height: 480px;
+		padding: 5%; 
+		background-color: #F0F1F3;
+		}	
+		#news_widget {
+		overflow: hidden;
+		float:right;
+		width: 100%;
+		height: auto;
+		padding: 5%; 
+		background-color: #F0F1F3;
+		}
+		#blogs {
+		overflow: hidden;
+		float:left;
+		width: 100%;
+		height: auto;
+		padding: 5%;
+		background-color: #F0F1F3;
+		}
+		#single {
+		float:left;
+		width: 100%;
+		height: auto;
+		padding: 5%;
+		background-color: #F0F1F3;
+		}
+		#news_single {
+		overflow: hidden;
+		float:left;
+		width: 100%;
+		height: auto;
+		padding: 5%; 
+		background-color: #F0F1F3;
+		}
+		#video_social {
+		overflow: hidden;
+		width: 100%;
+		height: auto;
+		background-color: #F0F1F3;
+		}
+		#encuestas {
+		overflow: hidden;
+		float:left;
+		width: 100%;
+		height: auto;
+		padding: 5%;
+		background-color: #F0F1F3;
+		}
+		#video {
+		overflow: hidden;
+		float:left;
+		width: 100%;
+		height: auto;
+		padding: 5%;
+		background-color: #F0F1F3;
+		}
+		#banner_home_boxg {
+		overflow: hidden;
+		display: block;
+		float:left;
+		width: 100%;
+		height: auto;
+		padding: 5%;
+		background-color: #F0F1F3;
+		}
+		#social {
+		overflow: hidden;
+		float:left;
+		width: 100%;
+		height: auto;
+		padding: 5%;
+		background-color: #F0F1F3;
+		}
+/* FOOTER
+   ========================================================================== */
+	#inferior {
+	overflow: hidden;
+	width: 100%;
+	background-color: #dbd7db;
+	}  
+	
+	#foot_info {
+	width: 100%;
+	}
+	
+	#foot_cabina {
+	float: left;
+	width: 100%;
+	padding: 25px;
+	}
+	
+	#foot_redes {
+	float: left;
+	width: 100%;
+	padding: 25px;
+	}
+	
+	#foot_secciones {
+	float: left;
+	width: 100%;
+	padding: 25px;
+	}
+	
+	#foot_copyright {
+	float: left;
+	width: 100%;
+	padding: 25px;
+	}
+} 
+
+
+/* OWL CAROUSEL
+	========================================================================== */
+
+		/*
+		* 	Owl Carousel Owl Demo Theme 
+		*	v1.3.3
+		*/
+
+		.owl-theme .owl-controls{
+			text-align: center;
+		}
+
+		/* Styling Next and Prev buttons */
+
+		.owl-theme .owl-controls .owl-buttons div{
+			color: #FFF;
+			display: inline-block;
+			zoom: 1;
+			*display: inline;/*IE7 life-saver */
+			margin: 0px;
+			padding: 0px 0px;
+			font-size: 12px;
+			-webkit-border-radius: 30px;
+			-moz-border-radius: 30px;
+			border-radius: 30px;
+			background: #869791;
+			filter: Alpha(Opacity=50);/*IE7 fix*/
+			opacity: 0.5;
+		}
+		/* Clickable class fix problem with hover on touch devices */
+		/* Use it for non-touch hover action */
+		.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+			filter: Alpha(Opacity=100);/*IE7 fix*/
+			opacity: 1;
+			text-decoration: none;
+		}
+
+		/* Styling Pagination*/
+
+		.owl-theme .owl-controls .owl-page{
+			display: inline-block;
+			zoom: 1;
+			*display: inline;/*IE7 life-saver */
+		}
+		.owl-theme .owl-controls .owl-page span{
+			display: block;
+			width: 8px;
+			height: 8px;
+			margin: 5px 5px;
+			filter: Alpha(Opacity=50);/*IE7 fix*/
+			opacity: 0.5;
+			-webkit-border-radius: 20px;
+			-moz-border-radius: 20px;
+			border-radius: 20px;
+			background: #869791;
+		}
+
+		.owl-theme .owl-controls .owl-page.active span,
+		.owl-theme .owl-controls.clickable .owl-page:hover span{
+			filter: Alpha(Opacity=100);/*IE7 fix*/
+			opacity: 1;
+		}
+
+		/* If PaginationNumbers is true */
+
+		.owl-theme .owl-controls .owl-page span.owl-numbers{
+			height: auto;
+			width: auto;
+			color: #FFF;
+			padding: 0px 0px;
+			font-size: 12px;
+			-webkit-border-radius: 0px;
+			-moz-border-radius: 30px;
+			border-radius: 0px;
+		}
+
+		/* preloading images */
+		.owl-item.loading{
+			min-height: 150px;
+			background: url(AjaxLoader.html) no-repeat center center
+		}
+
+		/* 
+		 * 	Core Owl Carousel CSS File
+		 *	v1.3.3
+		 */
+
+		/* clearfix */
+		.owl-carousel .owl-wrapper:after {
+			content: ".";
+			display: block;
+			clear: both;
+			visibility: hidden;
+			line-height: 0;
+			height: 0;
+		}
+		/* display none until init */
+		.owl-carousel{
+			display: none;
+			position: relative;
+			width: 100%;
+			-ms-touch-action: pan-y;
+		}
+		.owl-carousel .owl-wrapper{
+			display: none;
+			position: relative;
+			-webkit-transform: translate3d(0px, 0px, 0px);
+		}
+		.owl-carousel .owl-wrapper-outer{
+			overflow: hidden;
+			position: relative;
+			width: 100%;
+		}
+		.owl-carousel .owl-wrapper-outer.autoHeight{
+			-webkit-transition: height 500ms ease-in-out;
+			-moz-transition: height 500ms ease-in-out;
+			-ms-transition: height 500ms ease-in-out;
+			-o-transition: height 500ms ease-in-out;
+			transition: height 500ms ease-in-out;
+		}
+			
+		.owl-carousel .owl-item{
+			float: left;
+		}
+		.owl-controls .owl-page,
+		.owl-controls .owl-buttons div{
+			cursor: pointer;
+		}
+		.owl-controls {
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		}
+
+		/* mouse grab icon */
+		.grabbing { 
+			cursor:url(grabbing.html) 8 8, move;
+		}
+
+		/* fix */
+		.owl-carousel  .owl-wrapper,
+		.owl-carousel  .owl-item{
+			-webkit-backface-visibility: hidden;
+			-moz-backface-visibility:    hidden;
+			-ms-backface-visibility:     hidden;
+		  -webkit-transform: translate3d(0,0,0);
+		  -moz-transform: translate3d(0,0,0);
+		  -ms-transform: translate3d(0,0,0);
+		}
