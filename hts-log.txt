@@ -1,0 +1,20 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 29 Jul 2021 11:47:05 at http://universalstereoonline.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://universalstereoonline.com/ -O1 "C:\Users\Public\Music\US" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+11:47:06	Warning: 	Note: due to universalstereoonline.com remote robots.txt rules, links beginning with these path will be forbidden: /wp-admin/ (see in the options to disable this)
+11:47:48	Error: 	"Method Not Allowed" (405) at link universalstereoonline.com/xmlrpc.php (from universalstereoonline.com/)
+11:47:51	Error: 	"Not Found" (404) at link universalstereoonline.com/tg-sw.js (from universalstereoonline.com/)
+11:47:51	Error: 	"Not Found" (404) at link universalstereoonline.com/tg2-sw.js (from universalstereoonline.com/)
+11:47:52	Error: 	"Not Found" (404) at link universalstereoonline.com/wp-content/themes/radio/AjaxLoader.gif (from universalstereoonline.com/wp-content/themes/radio/style.css)
+11:47:52	Error: 	"Not Found" (404) at link universalstereoonline.com/wp-content/themes/radio/grabbing.png (from universalstereoonline.com/wp-content/themes/radio/style.css)
+11:47:52	Error: 	"Not Found" (404) at link universalstereoonline.com/statcounter.com/counter/counter.js (from https://www.statcounter.com/counter/counter.js)
+11:47:52	Error: 	"Not Found" (404) at link universalstereoonline.com/statcounter.com/counter/counter_test.js (from https://www.statcounter.com/counter/counter.js)
+11:47:53	Error: 	"Not Found" (404) at link universalstereoonline.com/statcounter.com/localstorage/ (from https://www.statcounter.com/counter/counter.js)
+
+HTTrack Website Copier/3.49-2 mirror complete in 48 seconds : 33 links scanned, 24 files written (1799327 bytes overall) [1191679 bytes received at 24826 bytes/sec], 1069636 bytes transferred using HTTP compression in 16 files, ratio 30%, 1.5 requests per connection
+(8 errors, 1 warnings, 0 messages)
