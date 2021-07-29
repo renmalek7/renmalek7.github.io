@@ -1,0 +1,17 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 29 Jul 2021 16:17:27 at http://classicrockuniversal.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://classicrockuniversal.com/ -O1 "C:\Users\A.Luna\Music\US" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+16:17:28	Warning: 	Note: due to classicrockuniversal.com remote robots.txt rules, links beginning with these path will be forbidden: /wp-admin/ (see in the options to disable this)
+16:18:08	Error: 	"Method Not Allowed" (405) at link classicrockuniversal.com/xmlrpc.php (from classicrockuniversal.com/)
+16:18:12	Error: 	"Not Found" (404) at link classicrockuniversal.com/tg-sw.js (from classicrockuniversal.com/)
+16:18:12	Error: 	"Not Found" (404) at link classicrockuniversal.com/tg2-sw.js (from classicrockuniversal.com/)
+16:18:12	Error: 	"Not Found" (404) at link classicrockuniversal.com/wp-content/themes/radio/AjaxLoader.gif (from classicrockuniversal.com/wp-content/themes/radio/style.css)
+16:18:12	Error: 	"Not Found" (404) at link classicrockuniversal.com/wp-content/themes/radio/grabbing.png (from classicrockuniversal.com/wp-content/themes/radio/style.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 45 seconds : 29 links scanned, 23 files written (1669522 bytes overall) [1098094 bytes received at 24402 bytes/sec], 928863 bytes transferred using HTTP compression in 12 files, ratio 29%, 1.4 requests per connection
+(5 errors, 1 warnings, 0 messages)
