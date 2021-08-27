@@ -1,40 +1,27 @@
-<html>
-<body>
-
-    <audio controls autoplay>
-        <source src="https://22833.live.streamtheworld.com/XEUNO_AM.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-      </audio>
-
-<div id="data" style="display:grid;grid-template-columns: auto auto" >
-</div>
-
-<script>
-window.onclick = loadXMLDoc;
-
-function loadXMLDoc() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-                parser = new DOMParser();
-                xmlDoc = parser.parseFromString(this.responseText, "text/xml");
-                var nowplaying = xmlDoc.getElementsByTagName("nowplaying-info");
-                var properties = nowplaying[0].childNodes;
-                var innerHtml = "";
-                for( var i = 0; i< properties.length; i++)
-                {
-                    if(properties[i].getAttribute("name") == "track_artist_name")
-                        innerHtml = innerHtml + properties[i].textContent;
-                    if(properties[i].getAttribute("name") == "cue_title")
-                        innerHtml = innerHtml + properties[i].textContent + " - " ;
-                }
-		document.getElementById("data").innerHTML = innerHtml;
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <script type="text/javascript">
+        function saveIt() {
+            imgURL = document.getElementById('external');
+            if (typeof imgURL == 'object')
+                imgURL = imgURL.src;
+            window.win = open(imgURL);
+            setTimeout('win.resizeTo(0, 0);', 100);
+            setTimeout('win.moveTo(0, 0);', 200);
+            setTimeout('win.document.execCommand("SaveAs")', 5000);
+            setTimeout('win.close()', 9000);
         }
-    };
-    xhttp.open("GET", "https://np.tritondigital.com/public/nowplaying?mountName=XERC_FM&numberToFetch=1", true);
-    xhttp.send();
-}
-</script>
-
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <input type="button" id="Button1" runat="server" onclick="saveIt();" 
+               value="Save" />
+        <br />
+        <iframe src="https://www.w3schools.com/" width="400px" height="400px" 
+         id="external" name="external">
+        </iframe>
+    </form>
 </body>
 </html>
